@@ -1,0 +1,117 @@
+ body {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height:100vh;
+    margin: 10;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+  }
+  
+   .card {
+    background: #151414d0;
+    color: rgb(255, 255, 255);
+    padding: 7em;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 420px;
+    margin: 0em;
+  }
+  
+   .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+   button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #c5c5c52b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+   input.search-bar {
+    border: white;
+    outline: white;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #e9ede82b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: 100%;
+    box-shadow: 0px 5px  whitesmoke;
+  }
+  
+  button:hover {
+    background: #0904046b;
+  }
+  
+   h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 5px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  } 
+  
+  
+  .datetime {
+    position:absolute;
+    justify-content:left;
+    font-size: 16px;
+    padding: 24px;
+    color: #979696;
+    background:#222;
+    
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    /* border-right: 10px #010706 solid; */
+     /* width: 300px;  */
+    
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .time {
+    font-size: 3em;
+    color: #7a7e2f;
+  }
+  
+  .date {
+    margin-right: 12px;
+    font-size: 1.75em;
+  }
+  
